@@ -373,10 +373,6 @@ li {
 
 /* -----------------------Media Query------------------------ */
 
-.container {
-    display: none;
-}
-
 @media screen and (max-width: 767px) {
 
     /* --------------Header part------------*/
@@ -386,7 +382,7 @@ li {
     }
 
     .nav-title {
-        font-size: 40px;
+        font-size: 22px;
     }
 
     .banner {
@@ -425,7 +421,7 @@ li {
         margin: 0;
         margin-top: 60px;
         padding: 0px 30px;
-    }  
+    }
 
     .experience-image img {
         width: 100%;
@@ -463,17 +459,22 @@ li {
         text-align: left;
         padding: 0px 30px;
     }
-    .sponsored-sites{
-        flex-direction: row;
-        justify-content: space-around;
+
+    .sponsored-sites {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* flex-direction: row;
+        justify-content: space-around; */
         gap: 24px;
         padding: 0px 30px;
         margin-top: 30px;
 
     }
-    .sponsored-sites img{
-        width: 20%;
+
+    .sponsored-sites img {
+        width: 80%;
     }
+
     /* ------------------Footer------------------ */
 
     .footer {
@@ -484,7 +485,11 @@ li {
         background: #FFF4E7;
         padding: 0px 30px;
     }
-    
+
+    .footer-text {
+        font-size: 08px;
+    }
+
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -514,11 +519,12 @@ li {
 
     .banner-title {
         font-weight: 700;
-    font-size: 64px;
+        font-size: 64px;
     }
+
     .banner-info {
         padding: 0px 100px;
-    
+
     }
 
 
@@ -544,7 +550,7 @@ li {
         margin: 0;
         margin-top: 60px;
         padding: 0px 30px;
-    }  
+    }
 
     .experience-image img {
         width: 100%;
@@ -564,8 +570,8 @@ li {
     }
 
     .different-facts {
- display: grid;
- grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         margin: 0;
         padding: 0px;
@@ -584,17 +590,21 @@ li {
         text-align: left;
         padding: 0px 30px;
     }
-    .sponsored-sites{
-        flex-direction: row;
-        justify-content: space-around;
+
+    .sponsored-sites {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* flex-direction: row;
+        justify-content: space-around; */
         gap: 24px;
         padding: 0px 30px;
         margin-top: 30px 0 60px 0;
 
     }
-    .sponsored-sites img{
+
+    /* .sponsored-sites img{
         width: 20%;
-    }
+    } */
     /* ------------------Footer------------------ */
 
     .footer {
@@ -605,6 +615,5 @@ li {
         background: #FFF4E7;
         padding: 0px 30px;
     }
-    
-}
 
+}
