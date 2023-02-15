@@ -487,6 +487,9 @@ li {
     }
 
     .footer-text {
+        margin-bottom: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         font-size: 08px;
     }
 
@@ -613,7 +616,7 @@ li {
         font-size: 20px;
         color: #424242;
         background: #FFF4E7;
-        padding: 0px 30px;
+        padding: 5px 0 5px 30px;
     }
 
 }
