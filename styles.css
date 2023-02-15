@@ -164,10 +164,10 @@ li {
     padding: 30px 30px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 }
+
 .experience-1:hover{
     transition: all 0.2s linear;
     transform: scale(1.04);
-
 }
 .experience-1-title {
     font-weight: 600;
@@ -222,7 +222,7 @@ li {
 .experience-image .experience-button h3 .experience-exceptional{
     font-weight: 500;
     font-size: 25px;
-    color: #FFFFFF;}
+    color: #FFFFFF;}
 
 
 /* Section-3 */
@@ -251,7 +251,8 @@ margin: 0;
     
 }
 
-.different-facts-2 {
+
+.different-facts-2{   
     display: flex;
     flex-direction: column;
     width: 241.83px;
@@ -263,6 +264,12 @@ margin: 0;
     justify-content: center;
 
 }
+
+.different-facts-2:hover{
+    transition: all 0.2s linear;
+    transform: scale(1.04);
+}
+
 .different-facts-img{
     margin: 0;
 }
@@ -312,8 +319,10 @@ justify-content: space-between;
 .sponsored-sites img{
     filter: grayscale(100%);
 }
-img:hover{
+.sponsored-sites img:hover{
     filter: grayscale(0%);
+    transition: all 0.2s linear;
+    transform: scale(1.04);
 }
 
 
