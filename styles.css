@@ -13,8 +13,9 @@
 .header-nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: 0px 100px;
     align-items: center;
+    margin: 0;
 }
 
 .nav-title {
@@ -27,6 +28,13 @@
     font-weight: 500;
     font-size: 18px;
     color: #424242;
+    cursor: pointer;
+}
+.list li a:hover{
+    color: #ee0e0e;
+    transition: all 0.2s linear;
+    
+
 }
 
 li {
@@ -77,6 +85,10 @@ li {
     margin-bottom: 20px;
 }
 
+.btn-primary:hover{
+    transition: all 0.2s linear;
+    transform: scale(1.04);
+}
 .banner-image {
     margin-bottom: 45px;
 }
@@ -119,7 +131,7 @@ li {
 
 /* Section-2 */
 .experience {
-    margin: 130px 270px;
+    margin: 130px 270px 0px 270px;
     display: flex;
     gap: 140px;
 
@@ -134,12 +146,17 @@ li {
     font-weight: 700;
     font-size: 45px;
     color: #131313;
+    margin: 0px;
+    border-left: 4px solid #FF900E;
+    padding-left: 20px;
 }
 
 .love-and-enjoy-description {
     font-weight: 400;
     font-size: 16px;
     color: #727272;
+    padding-top: 24px;
+    padding-bottom: 30px;
 
 }
 
@@ -147,7 +164,11 @@ li {
     padding: 30px 30px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 }
+.experience-1:hover{
+    transition: all 0.2s linear;
+    transform: scale(1.04);
 
+}
 .experience-1-title {
     font-weight: 600;
     font-size: 20px;
@@ -160,50 +181,98 @@ li {
     color: #727272;
 }
 
-/* .experience-button {
-    width: 258px;
-height: 109px;
-left: 928px;
-top: 3158px; 
-    background: #FF900E;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 65px;
-    color: #FFFFFF;
-    border: none;
-    width: 40%;
-    text-align: center;
+.experience-button{
+    top:-75px;
+    width: 215px;
+    height: 150px;
+}
+.experience-button:hover{
+    transition: all 0.2s linear;
+    transform: scale(1.04);
+}
+.experience-button h3{
+    padding: 34px;
+    font-size: 42px;
+    line-height: 30px;
 }
 
 .experience-exceptional {
+        font-weight: 500;
+        font-size: 25px;
+        color: #FFFFFF;
+}
+.experience-image .experience-button{
+    position: relative;
+    right: 20px;
+    top: -100px;
+    width: 342px;
+    height: 200px;
+    background: #FF900E;
+    border-radius: 8px;
+    
+}
+.experience-image .experience-button h3{
+    text-align: center;
+    padding: 45px;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.experience-image .experience-button h3 .experience-exceptional{
     font-weight: 500;
     font-size: 25px;
-    color: #FFFFFF;
-} */
+    color: #FFFFFF;}
+
 
 /* Section-3 */
 
 .facts {
-    margin: 130px 270px;
+    margin: 0px 270px;
 }
+.facts-title{
+    font-weight: 700;
+font-size: 45px;
+color: #131313;
+margin: 0;
+}
+#experience-1-description-id{
 
+    margin-top: 24px;
+    margin-bottom: 70px;
+
+}
 .different-facts {
+
     display: flex;
-    justify-content: space-evenly;
+    gap: 100px;
+    /* justify-content: space-evenly; */
+
+    
 }
 
 .different-facts-2 {
+    display: flex;
+    flex-direction: column;
     width: 241.83px;
     height: 241.83px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
 
 }
-
+.different-facts-img{
+    margin: 0;
+}
 .different-facts-2-paragraph {
     font-weight: 600;
     font-size: 45px;
     color: #424242;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0px;
 
 }
 
@@ -211,4 +280,57 @@ top: 3158px;
     font-weight: 600;
     font-size: 20px;
     color: #727272;
+    margin: 0;
+}
+/* margin: 75px 270px; */
+
+
+/* Sponsors */
+.sponsor-section{
+    margin: 130px 270px; 
+}
+.sponsors{
+   margin: auto;
+   text-align: center;
+}
+.sponsors-title{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin: 0px;
+}
+.sponsors-description{
+    font-weight: 400;
+font-size: 16px;
+color: #727272;
+}
+.sponsored-sites{
+    margin-top: 80px;
+display: flex;
+justify-content: space-between;
+}
+.sponsored-sites img{
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: grayscale(0%);
+}
+
+
+/*---------------- End of Main part---------- */
+
+/* -------------footer------------- */
+
+.footer{
+    margin: 150px 270px; 
+    font-weight: 400;
+font-size: 20px;
+color: #424242;
+    background: #FFF4E7;
+    padding: 20px 350px;
+}
+.footer-text{
+    font-weight: 400;
+font-size: 20px;
+color: #424242;
 }
